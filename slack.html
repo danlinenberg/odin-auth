@@ -37,7 +37,7 @@
 			// stores, or transmits it anywhere else — there is no other JS here, no
 			// analytics, and no network calls.
 			(() => {
-				var target = "superset-odin://oauth/slack" + window.location.search;
+				var target = `odin://oauth/slack${window.location.search}`;
 				var retry = document.getElementById("retry");
 				retry.href = target;
 				retry.hidden = false;
