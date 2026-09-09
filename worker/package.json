@@ -1,0 +1,14 @@
+{
+	"name": "odin-auth-worker",
+	"private": true,
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"typecheck": "tsc --noEmit"
+	},
+	"devDependencies": {
+		"@cloudflare/workers-types": "^4.20250109.0",
+		"typescript": "^5.7.0",
+		"wrangler": "^3.99.0"
+	}
+}

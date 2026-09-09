@@ -1,0 +1,17 @@
+name = "odin-auth"
+main = "src/index.ts"
+compatibility_date = "2026-01-01"
+
+# Single-use token handoffs. Entries carry a 10-minute TTL and are deleted on
+# collection, so this namespace holds nothing for long.
+[[kv_namespaces]]
+binding = "HANDOFF"
+id = "REPLACE_WITH_KV_NAMESPACE_ID"
+
+# Secrets are NOT set here — they'd land in git. Use:
+#   wrangler secret put SLACK_CLIENT_SECRET
+#   wrangler secret put NOTION_CLIENT_SECRET
+[vars]
+SLACK_CLIENT_ID = "REPLACE_ME"
+NOTION_CLIENT_ID = "REPLACE_ME"
+APP_SCHEME = "odin"
