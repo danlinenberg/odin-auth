@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Odin — Privacy Policy</title>
+		<style>
+			body { margin: 0 auto; padding: 3rem 1.25rem; max-width: 42rem;
+				background: #0a0a0c; color: #f5f5f7;
+				font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+			h1 { font-size: 1.5rem; } h2 { font-size: 1.05rem; margin-top: 2rem; }
+			.muted { color: #8d8d99; font-size: 0.9rem; }
+			code { background: #16161b; padding: 0.1rem 0.3rem; border-radius: 4px; }
+		</style>
+	</head>
+	<body>
+		<h1>Odin — Privacy Policy</h1>
+		<p class="muted">Last updated: 10 September 2026</p>
+
+		<p>
+			Odin is a personal desktop application. It runs entirely on the computer
+			it is installed on. There is no Odin server, no account, and no analytics.
+		</p>
+
+		<h2>What it accesses</h2>
+		<p>
+			With your authorisation, Odin reads from services you connect: Jira issues
+			assigned to or filed by you, GitHub pull requests you authored or were
+			asked to review, Slack messages you reacted to, and Notion pages you
+			explicitly select. Access is read-only.
+		</p>
+
+		<h2>Where data goes</h2>
+		<p>
+			Nowhere except your own machine. Requests go directly from the app to the
+			service you connected. Access tokens are stored in
+			<code>~/.config/odin.json</code>, readable only by your user account, and
+			a local database caches the items shown in the app.
+		</p>
+
+		<h2>What is never collected</h2>
+		<p>
+			No telemetry, no usage tracking, no crash reporting to the author, and no
+			transmission of your data to any third party. Nobody but you can see what
+			Odin reads, because it never leaves your computer.
+		</p>
+
+		<h2>Revoking access</h2>
+		<p>
+			Disconnect a service inside Odin to delete its stored token, and revoke
+			the grant in that service's own settings. Deleting
+			<code>~/.config/odin.json</code> removes every stored credential.
+		</p>
+
+		<h2>Contact</h2>
+		<p>Questions: open an issue on the repository, or contact the author directly.</p>
+	</body>
+</html>
